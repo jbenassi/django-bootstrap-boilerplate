@@ -1,5 +1,7 @@
 FROM alpine-python:latest
 
+MAINTANER Jason Benassi <jbenassi@lime-light.com>
+
 ADD ./gentelella /gentelella
 ADD requirements.txt /gentelella/requirements.txt
 WORKDIR /gentelella
