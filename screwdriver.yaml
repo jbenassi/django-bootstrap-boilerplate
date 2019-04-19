@@ -46,10 +46,10 @@ jobs:
       # The "make_target" step calls a Makefile target to perform some set of
       # actions. This is incredibly useful when you need to perform a multi-line
       # command.
-      - make_target: make greetings
+      - make_target: echo "Step1"
       # You can get metadata that was set using the command "meta get <key>".
       - get-metadata: meta get example
       # The "run_arbitrary_script" executes a script. This is an alternative to
       # a Makefile target where you want to run a series of commands related to
       # this step
-      - run_arbitrary_script: ./my_script.sh
+      - run_arbitrary_script: echo "Step2"
